@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>☀️ Weather app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1446ac47dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container results-container">
+      <div class="card card-outside">
+        <div class="card-body outside-body">
+          <div class="card card-inside">
+            <div class="card-body inside-body">
+              <form class="row g-3 results-input-form" id="results-form">
+                <div class="col-6">
+                  <div class="input-group mb-3">
+                    <input
+                      class="form-control"
+                      id="searchBar"
+                      type="text"
+                      autofocus="on"
+                      placeholder="Search..."
+                    />
+                    <div class="input-group-append">
+                      <span class="input-group-text" id="basic-addon2"
+                        ><i
+                          class="fa-solid fa-magnifying-glass results-search-icon"
+                        ></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 button-column">
+                  <button
+                    type="submit"
+                    class="btn btn-secondary results-search-button mb-3"
+                    id="search-button"
+                  >
+                    Search
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-secondary results-search-location-button mb-3"
+                    id="location-button"
+                  >
+                    My current location
+                  </button>
+                </div>
+              </form>
+              <div class="information">
+                <h1>
+                  <span class="city" id="displayed-city"></span>
+                  <span class="temperature-info"
+                    >☀️ <span id="temp"></span>
+                    <a class="temp-celsius" id="celsius" href="#">°C</a> |
+                    <a class="temp-fahrenheit" id="fahrenheit" href="#"
+                      >°F</a
+                    ></span
+                  >
+                </h1>
+                <h4>
+                  <span class="today">Today:</span>
+                  <span class="detail-info-today" id="detail-today"
+                    >Saturday, 13:00</span
+                  >
+                  <br />
+                </h4>
+                <h5>
+                  Humidity: <span id="humidity"></span>%
+                  <br />
+                  Wind: <span id="wind"></span>m/s
+                </h5>
+              </div>
+              <center><hr /></center>
+              <br />
+              <div class="row weekdays-row">
+                <div class="col weekday-col">
+                  <div class="card weekday-card">
+                    Sunday
+                    <br />
+                    <br />
+                    <span class="temperature-weekday">4°C</span>
+                    <br />
+                    Sunny
+                    <br />
+                    ☀️
+                  </div>
+                </div>
+                <div class="col weekday-col">
+                  <div class="card weekday-card">
+                    Monday
+                    <br />
+                    <br />
+                    <span class="temperature-weekday">2°C</span>
+                    <br />
+                    Rain
+                    <br />
+                    ☔
+                  </div>
+                </div>
+                <div class="col weekday-col">
+                  <div class="card weekday-card">
+                    Tuesday
+                    <br />
+                    <br />
+                    <span class="temperature-weekday">3°C</span>
+                    <br />
+                    Storm
+                    <br />
+                    ⛈️
+                  </div>
+                </div>
+                <div class="col weekday-col">
+                  <div class="card weekday-card">
+                    Wednesday
+                    <br />
+                    <br />
+                    <span class="temperature-weekday">0°C</span>
+                    <br />
+                    Clouds
+                    <br />
+                    ☁️
+                  </div>
+                </div>
+                <div class="col weekday-col">
+                  <div class="card weekday-card">
+                    Thursday
+                    <br />
+                    <br />
+                    <span class="temperature-weekday">-3°C</span>
+                    <br />
+                    Snow
+                    <br />
+                    ❄️
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
