@@ -1,6 +1,14 @@
 body {
   margin: 60px;
-  color: #54585b;
+  color: #d7d9db;
+}
+
+img {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 a {
@@ -35,14 +43,14 @@ footer {
 }
 
 .card-outside {
-  background-color: #dddee0;
+  background: rgba(0, 0, 0, 0.3);
   border: none;
   box-shadow: 7px 7px 8px rgba(72, 72, 72, 0.1);
   padding: 5px;
 }
 
 .card-inside {
-  background-color: #dddee0;
+  background: rgba(0, 0, 0, 0.3);
   padding: 30px;
   border: 2px solid #6c757d;
 }
