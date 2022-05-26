@@ -20,6 +20,10 @@ hr {
   width: 450px;
 }
 
+footer {
+  text-align: center;
+}
+
 /*Containers and cards*/
 
 .index-container {
@@ -193,4 +197,13 @@ hr {
 .temperature-weekday {
   font-size: 30px;
   font-weight: 700;
+}
+
+.link-github {
+  text-decoration: none;
+}
+
+.link-github:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
