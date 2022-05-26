@@ -1,6 +1,6 @@
 body {
   margin: 60px;
-  color: #f6f6f6d3;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 img {
@@ -55,8 +55,14 @@ footer {
 }
 
 .form-control {
+  color: red;
   background-color: rgba(255, 255, 255, 0.1);
   border: none;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
 }
 
 .form-control:focus {
@@ -79,7 +85,7 @@ footer {
 }
 
 .results-search-icon {
-  color: #6c757d;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .col-6 {
@@ -91,13 +97,16 @@ footer {
 }
 
 .btn {
-  background-color: rgba(63, 63, 63, 0.7);
+  background-color: rgba(69, 67, 67, 0.25);
   border: none;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  color: #f6f6f6d3;
 }
 
 .btn:hover {
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(69, 67, 67, 0.35);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  color: #f6f6f6d3;
 }
 
 .results-input-form {
@@ -110,6 +119,7 @@ footer {
 
 .results-search-button,
 .results-search-location-button {
+  color: rgba(255, 255, 255, 0.75);
   padding: 6.5px 25px;
 }
 
@@ -171,20 +181,21 @@ footer {
 }
 
 .weekday-card {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(135, 135, 135, 0.02);
   border: none;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  color: #54585b;
+  color: rgba(255, 255, 255, 0.75);
   font-size: 17px;
+  margin: 3px;
   padding: 15px;
   text-align: center;
   transition: all 200ms ease-in-out;
 }
 
 .weekday-card:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-  color: #54585b;
+  background-color: rgba(10, 10, 10, 0.2);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .temperature-weekday {
