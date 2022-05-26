@@ -1,0 +1,196 @@
+body {
+  margin: 60px;
+  color: #54585b;
+}
+
+a {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+h5 {
+  font-weight: 400;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+hr {
+  border: 1px solid #444749;
+  margin-top: 0;
+  width: 450px;
+}
+
+/*Containers and cards*/
+
+.index-container {
+  width: 600px;
+}
+
+.results-container {
+  width: 800px;
+}
+
+.card-outside {
+  background-color: #dddee0;
+  border: none;
+  box-shadow: 7px 7px 8px rgba(72, 72, 72, 0.1);
+  padding: 5px;
+}
+
+.card-inside {
+  background-color: #dddee0;
+  padding: 30px;
+  border: 2px solid #6c757d;
+}
+
+.outside-body {
+  padding: 0;
+}
+
+/*Index elements*/
+
+.form-label {
+  color: #6c757d;
+  font-size: 38px;
+}
+
+.index-input {
+  margin-top: 10px;
+  margin-bottom: 27px;
+}
+
+/*Index and results elements*/
+
+.form-control {
+  background-color: #f9fafa;
+  border-right: none;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #ced4da;
+  outline: 0;
+  box-shadow: none;
+}
+
+.input-group {
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.1);
+}
+
+.input-group-text {
+  background-color: #f9fafa;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  padding: 11px;
+}
+
+.index-search-icon,
+.results-search-icon {
+  color: #6c757d;
+}
+
+.col-6 {
+  padding-right: 1px;
+}
+
+.button-column {
+  margin-top: 16.25px;
+}
+
+.btn {
+  background-color: #778189;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.1);
+}
+
+.btn:hover {
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
+}
+
+/*Results elements*/
+
+.results-input-form {
+  margin-left: 25px;
+}
+
+.results-search-button {
+  margin-right: 1px;
+}
+
+.results-search-button,
+.results-search-location-button {
+  padding: 6.5px 25px;
+}
+
+.information {
+  width: 400px;
+  padding: 40px;
+  position: relative;
+  left: 120px;
+}
+
+.city {
+  text-align: left;
+}
+
+.temperature-info {
+  float: right;
+  font-size: 28px;
+  padding-top: 9px;
+}
+
+.temp-celsius {
+  color: rgb(106, 63, 199);
+  text-decoration: none;
+}
+
+.temp-celsius:hover {
+  color: rgb(56, 15, 114);
+}
+
+.temp-fahrenheit {
+  color: rgb(106, 63, 199);
+  text-decoration: none;
+}
+
+.temp-fahrenheit:hover {
+  color: rgb(56, 15, 114);
+}
+
+.today {
+  font-size: 22px;
+  text-align: left;
+}
+
+.detail-info-today {
+  float: right;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.weekday-col {
+  padding: 3px;
+}
+
+.weekday-card {
+  background-color: #bdc0c4;
+  border: none;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.1);
+  color: #54585b;
+  font-size: 17px;
+  padding: 15px;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+}
+
+.weekday-card:hover {
+  background-color: #b1b5b9;
+  box-shadow: 3px 3px 5px rgba(72, 72, 72, 0.3);
+  color: #54585b;
+}
+
+.temperature-weekday {
+  font-size: 30px;
+  font-weight: 700;
+}
