@@ -20,12 +20,12 @@
   </head>
   <body>
     <img src="multimedia/background.jpg" class="img-fluid" alt="" />
-    <div class="container results-container">
+    <div class="container">
       <div class="card card-outside">
         <div class="card-body outside-body">
           <div class="card card-inside">
             <div class="card-body inside-body">
-              <form class="row g-3 results-input-form" id="results-form">
+              <form class="row g-3 input-form" id="input-form">
                 <div class="col-6">
                   <div class="input-group mb-3">
                     <input
@@ -38,9 +38,7 @@
                     />
                     <div class="input-group-append">
                       <span class="input-group-text" id="basic-addon2"
-                        ><i
-                          class="fa-solid fa-magnifying-glass results-search-icon"
-                        ></i
+                        ><i class="fa-solid fa-magnifying-glass search-icon"></i
                       ></span>
                     </div>
                   </div>
@@ -48,14 +46,14 @@
                 <div class="col-6 button-column">
                   <button
                     type="submit"
-                    class="btn results-search-button mb-3"
+                    class="btn search-button mb-3"
                     id="search-button"
                   >
                     Search
                   </button>
                   <button
                     type="submit"
-                    class="btn results-search-location-button mb-3"
+                    class="btn search-location-button mb-3"
                     id="location-button"
                   >
                     My current location
@@ -66,7 +64,10 @@
                 <h1>
                   <span class="city" id="displayed-city"></span>
                   <span class="temperature-info"
-                    >☀️ <span id="temp"></span>
+                    ><i
+                      class="fa-solid fa-temperature-three-quarters temp-icon"
+                    ></i>
+                    <span id="temp"></span>
                     <a class="temp-celsius" id="celsius" href="#">°C</a> |
                     <a class="temp-fahrenheit" id="fahrenheit" href="#"
                       >°F</a

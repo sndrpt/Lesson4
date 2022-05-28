@@ -71,7 +71,7 @@ function showWeather(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
 }
 
-let enteredCity = document.querySelector("#results-form");
+let enteredCity = document.querySelector("#input-form");
 enteredCity.addEventListener("submit", handleSubmit);
 
 search("Oslo");
