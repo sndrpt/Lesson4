@@ -3,14 +3,6 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-img {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
 hr {
   border: 1px solid #444749;
   margin-top: 0;
@@ -23,6 +15,18 @@ footer {
 
 ul {
   list-style: none;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.img-fluid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .container {
@@ -122,13 +126,39 @@ ul {
   width: 600px;
 }
 
-.col-5 {
+.detail {
   text-align: right;
+}
+
+.city {
+  font-size: 32px;
+  font-weight: 400px;
+  line-height: 1;
+}
+
+.temperature-info {
+  font-size: 50px;
+  line-height: 1;
+  margin-top: 20px;
+}
+
+.detail-info-today {
+  font-size: 28px;
+}
+
+#icon {
+  height: 60px;
+  float: left;
+}
+
+.units {
+  font-size: 16px;
+  position: relative;
+  top: -23px;
 }
 
 .temp-celsius,
 .temp-fahrenheit {
-  font-size: 18px;
   color: rgba(135, 170, 235, 0.7);
   text-decoration: none;
 }

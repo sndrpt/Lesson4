@@ -61,28 +61,30 @@
                 </div>
               </form>
               <div class="row information">
-                <div class="col-7">
+                <div class="col">
                   <ul>
                     <li class="city" id="displayed-city"></li>
-                    <li class="today">Today:</li>
-                    <li class="description">kkk</li>
+                    <li class="temperature-info">
+                      <img
+                        src="http://openweathermap.org/img/wn/10d@2x.png"
+                        id="icon"
+                      /><span id="temp"></span
+                      ><span class="units">
+                        <a class="temp-celsius" id="celsius" href="#">°C</a>
+                        |
+                        <a class="temp-fahrenheit" id="fahrenheit" href="#"
+                          >°F</a
+                        >
+                      </span>
+                    </li>
                   </ul>
                 </div>
-                <div class="col-5">
+                <div class="col detail">
                   <ul>
-                    <li class="temperature-info">
-                      <span id="temp"></span>
-                      <a class="temp-celsius" id="celsius" href="#">°C</a>
-                      <a class="temp-fahrenheit" id="fahrenheit" href="#">°F</a>
-                    </li>
                     <li class="detail-info-today" id="detail-today"></li>
-                    <li>
-                        Humidity: <span id="humidity"></span>%</span
-                      >
-                    </li>
-                    <li>
-                      Wind: <span id="wind"></span>m/s
-                    </li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind: <span id="wind"></span>m/s</li>
+                    <li class="description" id="description"></li>
                   </ul>
                 </div>
               </div>
