@@ -83,7 +83,7 @@ function showWeather(response) {
 let enteredCity = document.querySelector("#input-form");
 enteredCity.addEventListener("submit", handleSubmit);
 
-search("Oslo");
+search("Szczecin");
 
 //Current location
 
