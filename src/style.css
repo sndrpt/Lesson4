@@ -11,12 +11,6 @@ img {
   min-height: 100%;
 }
 
-h5 {
-  font-weight: 400;
-  margin-bottom: 0;
-  text-align: right;
-}
-
 hr {
   border: 1px solid #444749;
   margin-top: 0;
@@ -25,6 +19,10 @@ hr {
 
 footer {
   text-align: center;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
@@ -49,7 +47,7 @@ footer {
 }
 
 .input-form {
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .form-control {
@@ -119,33 +117,18 @@ footer {
 }
 
 .information {
-  width: 400px;
+  margin: 0 15px 0 15px;
   padding: 40px;
-  position: relative;
-  left: 120px;
+  width: 600px;
 }
 
-.city {
-  text-align: left;
-}
-
-.temperature-info {
-  float: right;
-  font-size: 28px;
-  padding-top: 9px;
-}
-
-.temp-icon {
-  font-weight: 100;
+.col-5 {
+  text-align: right;
 }
 
 .temp-celsius,
 .temp-fahrenheit {
-  display: inline-block;
-  margin: 0 auto;
-}
-
-.temp-celsius {
+  font-size: 18px;
   color: rgba(135, 170, 235, 0.7);
   text-decoration: none;
 }
@@ -155,27 +138,12 @@ footer {
   text-decoration: underline;
 }
 
-.temp-fahrenheit {
-  color: rgba(135, 170, 235, 0.7);
-  text-decoration: none;
-}
-
 .temp-fahrenheit:hover {
   color: rgba(135, 170, 235, 0.9);
   text-decoration: underline;
 }
 
-.today {
-  font-size: 22px;
-  text-align: left;
-}
-
-.detail-info-today {
-  float: right;
-  font-size: 20px;
-  font-weight: 400;
-  padding-top: 5px;
-}
+/*Forecast*/
 
 .weekday-col {
   padding: 3px;
@@ -203,6 +171,8 @@ footer {
   font-size: 30px;
   font-weight: 700;
 }
+
+/*Footer*/
 
 .link-github {
   text-decoration: none;
