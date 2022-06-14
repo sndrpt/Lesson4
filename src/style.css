@@ -163,14 +163,19 @@ li:first-letter {
   text-decoration: none;
 }
 
-.temp-celsius:hover {
+.temp-celsius:hover,
+.temp-fahrenheit:hover {
   color: rgba(135, 170, 235, 0.9);
   text-decoration: underline;
 }
 
-.temp-fahrenheit:hover {
-  color: rgba(135, 170, 235, 0.9);
-  text-decoration: underline;
+.information .active {
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.information .active:hover {
+  text-decoration: none;
 }
 
 /*Forecast*/

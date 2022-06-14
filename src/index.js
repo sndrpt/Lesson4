@@ -28,23 +28,30 @@ showToday();
 
 //Celsius/Fahrenheit
 
-function showCelsius(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#temp");
-  temperature.innerHTML = "5";
-}
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", showCelsius);
-
 function showFahrenheit(event) {
   event.preventDefault();
   let temperature = document.querySelector("#temp");
-  temperature.innerHTML = 5 * 1.8 + 32;
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrTemp = (celsiusTemp * 9) / 5 + 32;
+  temperature.innerHTML = Math.round(fahrTemp);
 }
+
+function showCelsius(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temp");
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  temperature.innerHTML = Math.round(celsiusTemp);
+}
+
+let celsiusTemp = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
 fahrenheitLink.addEventListener("click", showFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", showCelsius);
 
 //Search
 
@@ -61,10 +68,9 @@ function search(city) {
 }
 
 function showWeather(response) {
-  console.log(response.data);
-  document.querySelector("#temp").innerHTML = Math.round(
-    response.data.main.temp
-  );
+  celsiusTemp = response.data.main.temp;
+
+  document.querySelector("#temp").innerHTML = Math.round(celsiusTemp);
   document.querySelector("#displayed-city").innerHTML = response.data.name;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
