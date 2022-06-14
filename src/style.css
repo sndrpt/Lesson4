@@ -154,7 +154,7 @@ li:first-letter {
 .units {
   font-size: 16px;
   position: relative;
-  top: -23px;
+  top: -24px;
 }
 
 .temp-celsius,
@@ -181,7 +181,7 @@ li:first-letter {
 /*Forecast*/
 
 .weekday-col {
-  padding: 3px;
+  padding: 1px;
 }
 
 .weekday-card {
@@ -191,7 +191,8 @@ li:first-letter {
   color: rgba(255, 255, 255, 0.75);
   font-size: 17px;
   margin: 3px;
-  padding: 15px;
+  max-width: 120px;
+  padding: 10px;
   text-align: center;
   transition: all 200ms ease-in-out;
 }
@@ -203,8 +204,12 @@ li:first-letter {
 }
 
 .temperature-weekday {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.forecast-temp-min {
+  opacity: 0.5;
 }
 
 /*Footer*/
